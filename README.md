@@ -12,6 +12,7 @@ can be used.
 
 ## Example:
 
+### Only available chars
 command:
 ```bash
 cat enable1.txt | ./word-finder.py word
@@ -31,6 +32,24 @@ wo
 word
 ```
 
+### Repeated chars
+command:
+```bash
+cat enable1.txt | ./word-finder.py wood
+```
+
+result:
+```
+do
+dow
+od
+ow
+wo
+woo
+wood
+```
+
+### Available chars and one 'any' char present
 command:
 ```bash
 cat enable1.txt | ./word-finder.py word --any 1
